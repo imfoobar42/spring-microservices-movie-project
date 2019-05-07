@@ -1,0 +1,5 @@
+package com.capgemini.movierating.movierating.controller;
+
+public class MovieRatingController {
+
+}

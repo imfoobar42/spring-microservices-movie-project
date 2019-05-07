@@ -1,0 +1,26 @@
+package com.capgemini.moviecatalog.moviecatalogservice.controller;
+
+import java.util.List;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.capgemini.moviecatalog.moviecatalogservice.entity.MovieCatalog;
+
+@RestController
+@RequestMapping("/catalog")
+public class MovieCatalogController {
+	
+	
+	@GetMapping("/{userId}")
+	public ResponseEntity<List<MovieCatalog>> getMovieCatalog(@PathVariable String userId){
+		//Get the Movie Ratings for the user
+		
+		//Get Movie Info.
+		
+		//Combine and return MovieCatalog 
+	}
+}

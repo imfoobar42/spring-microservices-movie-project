@@ -1,0 +1,7 @@
+package com.capgemini.movierating.movieratingservice.entity;
+
+public class Rating {
+	private int movieId;
+	private double rating;
+	
+}

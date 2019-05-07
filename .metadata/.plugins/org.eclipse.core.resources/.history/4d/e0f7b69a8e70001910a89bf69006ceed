@@ -1,0 +1,5 @@
+package com.capgemini.moviecatalog.moviecatalogservice.entity;
+
+public class MovieCatalog {
+
+}

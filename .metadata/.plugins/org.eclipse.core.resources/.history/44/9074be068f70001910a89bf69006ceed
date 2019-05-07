@@ -1,0 +1,5 @@
+package com.capgemini.moviecatalog.moviecatalogservice.controller;
+
+public class MovieCatalogController {
+
+}
