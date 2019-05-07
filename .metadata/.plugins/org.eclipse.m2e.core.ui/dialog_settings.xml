@@ -6,6 +6,7 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Akash\Movie Project\movie-catalog-eureka-server"/>
 			<item value="C:\Akash\Movie Project\movie-rating-service"/>
 			<item value="C:\Akash\Movie Project\movie-info-service"/>
 			<item value="C:\Akash\Movie Project\movie-catalog-service"/>

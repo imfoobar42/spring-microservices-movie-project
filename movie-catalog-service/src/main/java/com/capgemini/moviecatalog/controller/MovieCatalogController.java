@@ -29,16 +29,16 @@ public class MovieCatalogController {
 	public ResponseEntity<List<MovieCatalog>> getMovieCatalog(@PathVariable String userId) {
 	
 		// Get the Movie Ratings for the user
-		UserRating userRatings = restTemplate.getForEntity("http://localhost:8082/ratings/" + userId, UserRating.class)
+		UserRating userRatings = restTemplate.getForEntity("http://MOVIE-RATING-SERVICE/ratings/" + userId, UserRating.class)
 				.getBody();
-		
+
 		List<Rating> movieRatings = userRatings.getUserRatings();
 	
 		List<MovieCatalog> movieCatalog = new ArrayList<MovieCatalog>();
 
 		// Get Movie Info. and creating Movie Catalog
 		for (Rating rating : movieRatings) {
-			Movie movie = restTemplate.getForEntity("http://localhost:8083/movies/" + rating.getMovieId(), Movie.class)
+			Movie movie = restTemplate.getForEntity("http://MOVIE-INFO-SERVICE/movies/" + rating.getMovieId(), Movie.class)
 					.getBody();
 			movieCatalog.add(new MovieCatalog(movie.getMovieTitle(), movie.getMovieDescription(), rating.getRating()));
 		}
